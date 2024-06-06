@@ -1,0 +1,48 @@
+/**
+ * system.css theme for reveal.js
+ * Author: Austin Parker
+ * Adapted from https://github.com/sakofchit/system.css/blob/main/style.css
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+@import url("https://unpkg.com/@sakun/system.css");
+// Include theme-specific fonts
+@import url(./fonts/system/system.css);
+
+$sys-color-white: #ffffff;
+$sys-color-black: #000000;
+$sys-color-gray: #a5a5a5;
+$sys-color-darkgrey: #b6b7b8;
+
+$mainColor: $sys-color-black;
+$mainFont: "Chicago";
+$headingFont: "Chicago";
+$headingColor: $sys-color-black;
+$headingTextShadow: none;
+
+.window {
+    height: 97vh;
+}
+
+// Change text colors against light slide backgrounds
+@include light-bg-text-color(#222);
+
+@mixin gradientBackground($primaryColor, $secondaryColor) {
+    background:
+        linear-gradient(90deg, $primaryColor 21px, transparent 1%) center,
+        linear-gradient($primaryColor 21px, transparent 1%) center,
+        $secondaryColor;
+    background-size: 22px 22px;
+    background-attachment: fixed;
+}
+
+@mixin bodyBackground() {
+    @include gradientBackground($sys-color-white, $sys-color-black);
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

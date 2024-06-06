@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Monaco";
+    src: url("./monaco.woff") format("woff");
+    src: url("./monaco.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Chicago";
+    src: url("./ChicagoFLF.woff") format("woff");
+    src: url("./ChicagoFLF.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Chicago_12";
+    src: url("./ChiKareGo2.woff") format("woff");
+    src: url("./ChiKareGo2.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Geneva_9";
+    src: url("./FindersKeepers.woff") format("woff");
+    src: url("./FindersKeepers.woff2") format("woff2");
+}
